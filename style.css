@@ -11,13 +11,26 @@ body {
 
 header {
     background-color: #2A2A2A;
+    
+    background-image: url(/img/1338843.png);
+    background-size: 130rem;
+    background-position: 75px;
+    filter: saturate(1.2);
+}
+
+html {
+    scroll-behavior: smooth;
 }
 .logo {
     width: 30px;
+    filter: invert(43%) sepia(15%) saturate(1978%) hue-rotate(100deg) brightness(95%) contrast(86%);
 }
 
 .logoTitle {
     color: #fff;
+    font-family: 'Cinzel', sans-serif;
+    font-weight: 400;
+    cursor: pointer;
 }
 
 .leftSide {
@@ -48,6 +61,16 @@ nav {
     margin: 200px 0 0 70px;
 }
 
+#bar {
+    animation: blink 1s linear infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% {opacity: 0;}
+}
+
 .contactMe {
     margin-top: 20px;
     height: 43px;
@@ -57,6 +80,7 @@ nav {
     border: none;
     border-radius: 2%;
     font-size: medium;
+    cursor: pointer;
 }
 
 #info {
@@ -77,6 +101,8 @@ h4 {
 #profilePicture {
     width: 287px;
     margin: 65px 0 50px 216px;
+    filter: grayscale(.50);
+
 }
 
 .aboutMe {
@@ -99,7 +125,7 @@ h4 {
     gap: 16px;
 }
 
-.downloadCv {
+.viewMore{
     margin-top: 10px;
     height: 35px;
     width: 150px;
@@ -110,11 +136,129 @@ h4 {
     font-size: 14px;
 }
 
-#projectsPicture {
+.downloadCv {
+    display: flex;
+    margin-top: 10px;
+    height: 35px;
+    width: 150px;
+    background-color: #009D66;
+    color: #fff;
+    border: none;
+    border-radius: 2%;
+    font-size: 14px;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.titleProjects {
+    color: #fff;
+    margin: 50px 0 20px 0;
+    text-align: center;
+    font-family: 'Poppins', 'sans-serif';
+}
+
+
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+
     
 }
 
-.portfolio {
-    display: grid;
-    
+.carousel-item {
+    display: none;
+    position: relative;
+    text-align: center; 
 }
+
+.carousel-item.active {
+    display: block;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+
+.carousel-control-prev {
+    left: 28%
+}
+
+.carousel-control-next {
+    right: 28%;
+}
+
+.d-block {
+    
+} 
+
+.carousel-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.buttonViewMore {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#contactMeTitle {
+    color: #208963;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+
+}
+
+input, textarea{
+    background-color: #2E2E2E;
+    border: none;
+    border-radius: 10px;
+    padding: 20px 15px;
+    width: 500px;
+    color: #fff;
+}
+
+::placeholder {
+    color: #fff;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+}
+
+textarea {
+    height: 150px;
+}
+
+form .btn-submit input {
+    width: 150px;
+    background-color: #009D66;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.socialMedia {
+    display: flex;
+    justify-content: center;
+    margin-top: 75px;
+    gap: 16px;
+}
+
