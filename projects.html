@@ -8,15 +8,77 @@
     <link rel="stylesheet" href="/projects.css">
   </head>
   <body>
-    <h1>Projects</h1>
-    <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+    <header>
+      <nav>
+        <div class="leftSide"> 
+        <img class="logo" src="./img/logo.png" alt="logotipo">
+        <h4 class="logoTitle">rafael vicenzo</h4>
+        </div>
+        <div class="rightSide">
+        <a href="index.html" id="index">Home</a>
+        <a href="/index.html#profilePicture" id="index">Resume</a>
+        <a href="projects.html" id="index">Projects</a>
+        <a href="https://github.com/rafaelvicenzo" target="_blank" id="index">GitHub</a>
+        <a href="/index.html#contactMeTitle" id="index">Contact</a>
+    </div>
+    </nav>
+    </header>
+    <h2 id="projectsTitle">Projects</h2>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card text-bg-dark mb-3 card border-secondary mb-3">
+            <img src="/img/weather-app.png" class="card-img-top" alt="Weather app project picture">
+            <div class="card-body">
+              <h5 class="card-title text-center">Weather App</h5>
+              <p class="card-text" style="color: #9F9F9F">I built a fully responsive weather app using the OpenWeatherMap API.</p>
+              <img src="/img/icons/js.png" alt="icon JavaScript">
+              <img src="/img/icons/css-3.png" alt="icon CSS">
+              <img src="/img/icons/html-5.png" alt="icon HTML">
+              <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+              <a href="https://github.com/rafaelvicenzo/weather-app" target="_blank" class="btn btn-success" style="font-size: 14px;">View Project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card text-bg-dark mb-3 card border-secondary mb-3">
+            <img src="/img/coffe-shop.png" class="card-img-top" alt="Coffe-shop project picture">
+            <div class="card-body">
+              <h5 class="card-title text-center">Coffe Shop</h5>
+              <p class="card-text" style="color: #9F9F9F">The intention of doing this project was to use a CSS framework for the first time.</p>
+              <img src="/img/icons/bootstrap.png" alt="icon bootstrap">
+              <img src="/img/icons/css-3.png" alt="icon CSS">
+              <img src="/img/icons/html-5.png" alt="icon HTML">
+              <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+              <a href="https://github.com/rafaelvicenzo/coffee-shop-bootstrap" target="_blank" class="btn btn-success" style="font-size: 14px;">View Project</a>               
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card text-bg-dark mb-3 card border-secondary mb-3">
+            <img src="/img/HBO-max-clone.png" class="card-img-top" alt="HBO Max clone project picture">
+            <div class="card-body">
+              <h5 class="card-title text-center">HBO Max Clone</h5>
+              <p class="card-text" style="color: #9F9F9F">By cloning the HBO website, I was able to learn several features of the vanilla CSS</p>
+              <img src="/img/icons/css-3.png" alt="icon CSS">
+              <img src="/img/icons/html-5.png" alt="icon HTML">
+              <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+              <a href="https://github.com/rafaelvicenzo/hbomax" target="_blank" class="btn btn-success" style="font-size: 14px;">View Project</a>               
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+    </div>
+      
+    <footer class="socialMedia">
+      <a href="https://www.instagram.com/rafaelvicenzo/" target="_blank"><img src="/img/icons8-instagram-48.png" alt=""></a>
+      <a href="https://github.com/rafaelvicenzo" target="_blank"><img src="/img/icons8-github-48.png" alt=""></a>
+      <a href="https://www.linkedin.com/in/rafael-vicenzo-11824321b/" target="_blank"><img src="/img/icons8-linkedin-48.png" alt=""></a>
+  </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  
   </body>
 </html>

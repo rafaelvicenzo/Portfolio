@@ -8,3 +8,4 @@ function scrollToSection() {
         window.scrollTo({ top: elementPosition, behavior: 'auto' });
     }
 }
+
