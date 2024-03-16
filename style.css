@@ -13,7 +13,7 @@ header {
     background-color: #2A2A2A;
     
     background-image: url(/img/1338843.png);
-    background-size: 130rem;
+    background-size: 80rem;
     background-position: 75px;
     filter: saturate(1.2);
 }
@@ -293,5 +293,34 @@ form .btn-submit input {
 }
 
 @media (max-width: 775px) {
-    
+    header {
+        background-position: 0px;
+        background-size: 110rem;
+    }
+    #info {
+        margin: 125px 0 0 30px;
+    }
+    .rightSide {
+        margin: 27px 70px 0 0;
+    }
 }
+
+@media (max-width: 750px) {
+    nav {
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    } 
+    
+    .leftSide {
+        margin: 21px 0 0 0px;
+    }
+
+    .rightSide {
+        margin: 27px 0 0 0px;
+    }
+    #info {
+        margin: 125px 0 0 10px;
+    }
+}
+
