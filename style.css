@@ -324,3 +324,75 @@ form .btn-submit input {
     }
 }
 
+@media (max-width: 747px) {
+    #info hr {
+        display: none;
+    }
+
+    #info {
+        display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin-left: 20px;
+    }
+
+    #apresentation {
+        margin-left: 20px; 
+    }
+
+    header {
+        background-position: -211px;
+        background-size: 110rem;
+    }
+
+    .cvArea {
+        grid-template-columns: 40px 150px 40px 150px;
+    }
+
+    .carousel-item img {
+        max-width: 400px;
+        height: auto;
+    }
+
+    .buttonsCarousel { 
+        gap: 300px;
+        bottom: 100px;
+    }
+}
+
+@media (max-width: 550px) {
+    input, textarea {
+        width: 300px;
+    }
+
+    .cvArea {
+        grid-template-columns: 50px 300px;
+    }
+}
+
+@media (max-width: 410px) {
+    .carousel-item img {
+        max-width: 300px;
+    }
+    .buttonsCarousel {
+        gap: 240px;
+        bottom: 80px;
+    }
+    .carousel-control-prev, .carousel-control-next {
+        height: 42px;
+        width: 30px;
+    }
+}
+
+@media (max-width: 360px) {
+    .rightSide {
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    header {
+        background-position: -237px;
+        background-size: 125rem;
+    }
+}
