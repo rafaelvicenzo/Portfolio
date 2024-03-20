@@ -13,6 +13,7 @@ body {
     width: 30px;
     height: 32px;
     filter: invert(43%) sepia(15%) saturate(1978%) hue-rotate(100deg) brightness(95%) contrast(86%);
+    cursor: pointer;
 }
 
 .logoTitle {

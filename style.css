@@ -24,6 +24,7 @@ html {
 .logo {
     width: 30px;
     filter: invert(43%) sepia(15%) saturate(1978%) hue-rotate(100deg) brightness(95%) contrast(86%);
+    cursor: pointer;
 }
 
 .logoTitle {
@@ -83,6 +84,11 @@ nav {
     cursor: pointer;
 }
 
+a .contactMe:hover {
+        background-color: #00754c;
+        transition: all 200ms ease-in-out; 
+}
+
 #info {
     display: flex;
     margin: 125px 0 0 70px;
@@ -101,7 +107,7 @@ h4 {
 #profilePicture {
     width: 287px;
     margin: 65px 0 50px 216px;
-    filter: grayscale(.50);
+    filter: contrast(1.0) hue-rotate(349deg) saturate(0.5) url(#purple-sepia);
 
 }
 
@@ -149,6 +155,11 @@ h4 {
     text-decoration: none;
     justify-content: center;
     align-items: center;
+}
+
+.downloadCv:hover {
+    background-color: #00754c;
+    transition: all 200ms ease-in-out; 
 }
 
 .titleProjects {
@@ -215,6 +226,11 @@ h4 {
     cursor: pointer;
 }
 
+a .viewMore:hover {
+        background-color: #00754c;
+        transition: all 200ms ease-in-out; 
+}
+
 .buttonsCarousel {
     display: flex;
     align-items: center;
@@ -262,6 +278,11 @@ form .btn-submit input {
     background-color: #009D66;
     border-radius: 2px;
     cursor: pointer;
+}
+
+form .btn-submit input:hover {
+        background-color: #00754c;
+        transition: all 200ms ease-in-out; 
 }
 
 .socialMedia {
@@ -392,7 +413,7 @@ form .btn-submit input {
     }
 
     header {
-        background-position: -237px;
-        background-size: 125rem;
-    }
+    background-position: -237px;
+    background-size: 125rem;
+}
 }
