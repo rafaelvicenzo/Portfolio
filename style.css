@@ -1,4 +1,4 @@
-@import url(/fonts.css);
+@import url(fonts.css);
 
 * {
     margin: 0;
@@ -12,7 +12,7 @@ body {
 header {
     background-color: #2A2A2A;
     
-    background-image: url(/img/1338843.png);
+    background-image: url(img/1338843.png);
     background-size: 80rem;
     background-position: 75px;
     filter: saturate(1.2);
